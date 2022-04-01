@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding ion-text-center style">
+  <form [formGroup]="formData" (ngSubmit)="getFormData()">
+    <ion-item>
+      <ion-label>Login : </ion-label>
+      <ion-input type="text" formControlName='login'></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Mot de pass : </ion-label>
+      <ion-input type="text" formControlName="password"></ion-input>
+    </ion-item>
+    <ion-button type="submit" expand="block" [disabled]="!formData.valid">Connecter</ion-button>
+  </form>
+</ion-content>

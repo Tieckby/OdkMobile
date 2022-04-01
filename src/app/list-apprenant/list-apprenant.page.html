@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-item><ion-back-button></ion-back-button></ion-item>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list *ngFor="let app of listApprenants">
+    <ion-item>
+      <ion-icon name="person-outline" slot="start"></ion-icon>
+      <ion-label>{{app.apprenantPrenom}} {{app.apprenantNom}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

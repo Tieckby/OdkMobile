@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Accueil
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-buttons>
+  <ion-menu-button menu="main-menu" style="color: orange;"></ion-menu-button>
+</ion-buttons>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="medium">Accueil</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <h2>Bienvenue {{apprenant.apprenantPrenom}} {{apprenant.apprenantNom}}, {{currentTime}}</h2>
+
+</ion-content>
